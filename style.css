@@ -1,0 +1,25 @@
+:root{--bg:#faf8f4;--fg:#1f2430;--muted:#4a5160;--accent:#1d4e89;--card:#fff;--line:#d9d4c9;--hl:#fff3c4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#14171d;--fg:#f0eee9;--muted:#c3c8d2;--accent:#8fc0ff;--card:#1c2028;--line:#343a46;--hl:#4a4220}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:1.125rem/1.7 Georgia,"Times New Roman",serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--bg);padding:.6rem 1rem}
+.skip:focus{left:0;z-index:10}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;align-items:center;padding:1rem 0}
+.brand{font-weight:700;font-size:1.2rem;color:var(--fg);text-decoration:none}
+nav ul{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;list-style:none;margin:0;padding:0;font-family:system-ui,sans-serif;font-size:1rem}
+nav a[aria-current="page"]{font-weight:700;text-decoration:none;border-bottom:3px solid var(--accent)}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;margin:2.5rem 0 .5rem}
+h2{font-size:1.6rem;margin:2.5rem 0 .5rem}
+h3{font-size:1.25rem;margin:1.5rem 0 .25rem}
+.lede{font-size:1.3rem;color:var(--muted);margin:0 0 1.5rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));list-style:none;padding:0}
+.grid .card{margin:0}
+.grid p{margin:0;font-size:1rem;color:var(--muted)}
+.fill{background:var(--hl);padding:0 .2em}
+footer{border-top:1px solid var(--line);margin-top:3rem;padding:1.5rem 0;font:1rem system-ui,sans-serif;color:var(--muted)}

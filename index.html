@@ -4,62 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Diego Goncalves Eliseu | ePortfolio</title>
-<style>
-:root{--bg:#faf8f4;--fg:#1f2430;--muted:#4a5160;--accent:#1d4e89;--card:#fff;--line:#d9d4c9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--fg:#f0eee9;--muted:#c3c8d2;--accent:#8fc0ff;--card:#1c2028;--line:#343a46}}
-:root[data-theme="dark"]{--bg:#14171d;--fg:#f0eee9;--muted:#c3c8d2;--accent:#8fc0ff;--card:#1c2028;--line:#343a46}
-*{box-sizing:border-box}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font:1.125rem/1.7 Georgia,"Times New Roman",serif}
-a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--bg);padding:.6rem 1rem}
-.skip:focus{left:0;z-index:10}
-.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
-header{border-bottom:1px solid var(--line)}
-.bar{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;align-items:center;padding:1rem 0}
-.brand{font-weight:700;font-size:1.2rem;color:var(--fg);text-decoration:none}
-nav ul{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;list-style:none;margin:0;padding:0;font-family:system-ui,sans-serif;font-size:1rem}
-nav a[aria-current="page"]{font-weight:700;text-decoration:none;border-bottom:3px solid var(--accent)}
-h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;margin:2.5rem 0 .5rem}
-h2{font-size:1.6rem;margin:2.5rem 0 .5rem}
-h3{font-size:1.2rem;margin:0 0 .25rem}
-.lede{font-size:1.3rem;color:var(--muted);margin:0 0 1.5rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.25rem}
-.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));list-style:none;padding:0}
-.grid p{margin:0;font-size:1rem;color:var(--muted)}
-footer{border-top:1px solid var(--line);margin-top:3rem;padding:1.5rem 0;font:1rem system-ui,sans-serif;color:var(--muted)}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header>
  <div class="wrap bar">
-  <a class="brand" href="#top">Diego Goncalves Eliseu</a>
+  <a class="brand" href="index.html">Diego Goncalves Eliseu</a>
   <nav aria-label="Main">
    <ul>
-    <li><a href="#top" aria-current="page">Home</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#portfolio">About This ePortfolio</a></li>
-    <li><a href="#purpose">Purpose</a></li>
-    <li><a href="#explore">Explore</a></li>
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="writing-process.html">Writing Processes &amp; Adaptation</a></li>
+    <li><a href="literacies.html">Multiple Literacies &amp; Goal Setting</a></li>
    </ul>
   </nav>
  </div>
 </header>
 
 <main id="main" class="wrap">
- <h1 id="top">Welcome to my ePortfolio</h1>
+ <h1>Welcome to my ePortfolio</h1>
  <p class="lede">A working collection of my writing, projects, and reflections on how I'm growing as a writer and a Computer Science student.</p>
 
  <section aria-labelledby="about">
   <h2 id="about">About Me</h2>
-  <p>Hello, I'm Diego Goncalves Eliseu, a freshman studying Computer Science at UCF.I moved from Brazil to Florida when I was six, and I've lived here ever sinceAfter graduation I hope to work in software engineering or cybersecurity. This ePortfolio is where I share my work and reflect on how I'm growing as a writer in a technical field..</p>
+  <p>Hello, I'm Diego Goncalves Eliseu, a freshman studying Computer Science at UCF. I moved from Brazil to Florida when I was six, and I've lived here ever since. After graduation, I hope to work in software engineering or cybersecurity. This ePortfolio is where I share my work and reflect on how I'm growing as a writer in a technical field.</p>
  </section>
 
  <section aria-labelledby="portfolio">
   <h2 id="portfolio">About This ePortfolio</h2>
-  <p>This website is a semester-long project for ENC1101-26Fall 0026 at UCF. It is where I collect my best work, organize it, and write about what I learned while making it. You'll find drafts, finished pieces, and reflections, and the site will keep growing through my freshman year..</p>
+  <p>This website is a semester-long project for ENC1101 at UCF. It is where I collect my best work, organize it, and write about what I learned while making it. You'll find drafts, finished pieces, and reflections, and the site will keep growing through my freshman year.</p>
  </section>
 
  <section aria-labelledby="purpose">
@@ -67,26 +40,19 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding:1.5rem 0;font:1r
   <p>I'm building this portfolio to show how my writing changes over time: how I plan, revise, respond to feedback, and write for different audiences. I also want it to outlast this class, so I'm designing it to hold coding projects too.</p>
  </section>
 
- <section aria-labelledby="SLO">
-  <h2 id="SLO">SLOS</h2>
-  <p>I'm building this portfolio to show how my writing changes over time: how I plan, revise, respond to feedback, and write for different audiences. I also want it to outlast this class, so I'm designing it to hold coding projects too.</p>
- </section>
- 
  <section aria-labelledby="explore">
   <h2 id="explore">Explore the Site</h2>
-  <p>These do not work yet.</p>
+  <p>Each page below focuses on one course learning outcome. More will be added this semester.</p>
   <ul class="grid">
-   <li class="card"><h3><a href="#">Artifacts</a></h3><p>Writing and projects, with a short description of each.</p></li>
-   <li class="card"><h3><a href="#">Reflections</a></h3><p>What I learned from each assignment and what I'd change.</p></li>
-   <li class="card"><h3><a href="#">Résumé</a></h3><p>My experience and skills, available as an accessible PDF.</p></li>
-   <li class="card"><h3><a href="#">Contact</a></h3><p>How to reach me.</p></li>
+   <li class="card"><h3><a href="writing-process.html">Writing Processes &amp; Adaptation</a></h3><p>How I plan, draft, and adjust my writing process.</p></li>
+   <li class="card"><h3><a href="literacies.html">Multiple Literacies &amp; Goal Setting</a></h3><p>How my different skills and languages support my writing.</p></li>
   </ul>
  </section>
 </main>
 
 <footer>
  <div class="wrap">
-  <p>&copy; 2026 Diego Goncalves Eliseu. Contact: <a href="dno99354@gmail.com">dno99354@gmail.com</a></p>
+  <p>&copy; 2026 Diego Goncalves Eliseu. Contact: <a href="mailto:dno99354@gmail.com">dno99354@gmail.com</a></p>
  </div>
 </footer>
 </body>
